@@ -12,6 +12,20 @@ html, body {
 	height: 100%;
 	margin: 0 auto -2em;
 }
+#body_div {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#controls_table {
+	width: 100%;
+}
+#controls_table_left {
+	text-align: left;
+}
+#controls_table_right {
+	text-align: right;
+}
 .footer, .push {
 	height: 2em;
 }
