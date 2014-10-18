@@ -3,6 +3,27 @@
 	<head>
 		<link rel="stylesheet" href="stylesheets/design.css">
 		<title>Fee Book</title>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script>
+		function showAppVersion() {
+			$.ajax({
+			  type: "GET",
+			  url: "api/version"
+			})
+			.done(function(msg) {
+				var json = msg.replace("<pre>", "");
+				var json = json.replace("</pre>", "");
+				var version_array = JSON.parse(json);
+				$("#app_version").html(" v" + version_array.version + " (" + version_array.build + ")");
+			})
+			.fail(function(msg) {
+				console.log("[api/version]: Request failed.");
+			});
+		}
+		$(document).ready(function() {
+			showAppVersion();
+		});
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -67,7 +88,7 @@
 		</div>
 		<div class="footer">
 			<p class="footer_text">&copy; 2014 Viraj Chitnis</p>
-			<p class="footer_text">OfficeDB v0.0.1</p>
+			<p class="footer_text">OfficeDB<span id="app_version"></span></p>
 		</div>
 	</body>
 </html>
