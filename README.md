@@ -1,4 +1,4 @@
 Office Database
 ---------------
 
-Database for baba's office.
+Web application for keeping track of office data.
