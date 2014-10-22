@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1 #{title}
-  p Welcome to #{title}
+  nav.navbar.navbar-default.default-margins(role='navigation')
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='#') #{appname}
+      button.btn.btn-default.navbar-btn.disabled(type='button') Accounts
+      button.btn.btn-default.navbar-btn.default-left-margin(type='button') Contacts
