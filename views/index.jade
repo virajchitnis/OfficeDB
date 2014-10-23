@@ -17,4 +17,49 @@ block content
     button.btn.btn-default.btn-sm.default-left-margin(title='Delete an entry')
       span.glyphicon.glyphicon-trash
       span &nbsp;Delete
+    .dropdown.float-right
+      button#settings-dropdown.btn.btn-default.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown')
+        span.glyphicon.glyphicon-cog
+        span &nbsp;Settings&nbsp;
+        span.caret
+      ul.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='settings-dropdown')
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#')
+            span Enable table borders
   #table-wrapper
+    table.table.table-striped
+      tr
+        th
+        th Memo No.
+        th Date
+        th Partner
+        th Solicitor/Client
+        th Suit No.
+        th Name of the party
+        th Particulars
+        th Fees (&#8377;)
+        th Fees Recd.
+        th Bal (&#8377;)
+        th Dt of Recpt
+        th Cheque No.
+        th Cheque Dt.
+        th Drawn on
+        th Received from
+      tr
+        td
+          input(type='checkbox', name='id', value='the_id')
+        td 001/04/13
+        td 1st Apr, 2013
+        td Mr. Client Name
+        td C/o Dual Assoc
+        td C/S No. 1004/2012, Suit No.1400/2009
+        td Some entity/company name vs some other entity/company
+        td Holding conference and Appearance
+        td 80000
+        td 80000
+        td 0
+        td 7/8/13
+        td 910291
+        td 29/7/2013
+        td Some Bank
+        td Dual Assoc
