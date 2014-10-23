@@ -20,3 +20,12 @@ body {
 	margin: 10px;
 	text-align: center;
 }
+#table-wrapper {
+	position: absolute;
+	left: 10px;
+	top: 112px;
+	background-color: #ccc;
+	height: calc(100% - 145px);
+	width: calc(100% - 20px);
+	overflow: auto;
+}
