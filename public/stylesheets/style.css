@@ -1,3 +1,6 @@
+body {
+	overflow: hidden;
+}
 .default-margins {
 	margin: 10px;
 }
