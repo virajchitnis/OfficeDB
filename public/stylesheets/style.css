@@ -7,6 +7,9 @@ body {
 .default-left-margin {
 	margin-left: 5px;
 }
+.default-right-margin {
+	margin-right: 5px;
+}
 .footer-div {
 	position: fixed;
 	left: 0;

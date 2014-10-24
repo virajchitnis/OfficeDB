@@ -26,6 +26,20 @@ block content
         li#enableTableBordersButton(role='presentation')
           a(role='menuitem', tabindex='-1', href='#')
             span Table borders
+    .dropdown.float-right.default-right-margin
+      button.btn.btn-default.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown')
+        span Sort by month&nbsp;
+        span.caret
+      ul.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='settings-dropdown')
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#')
+            span Apr '13
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#')
+            span May '13
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='#')
+            span June '13
   #table-wrapper
     table#accountsTable.table.table-striped
       tr
