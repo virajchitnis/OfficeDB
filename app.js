@@ -4,6 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var https = require('https');
+var fs = require('fs');
 var mongo = require('mongoskin');
 var db = mongo.db("mongodb://localhost:27017/nodetest2", { native_parser: true });
 
@@ -58,5 +60,9 @@ app.use(function(err, req, res, next) {
     });
 });
 
+https.createServer({
+	key: fs.readFileSync('./certs/key.pem', 'utf8'),
+	cert: fs.readFileSync('./certs/server.crt', 'utf8'
+)}, app).listen(3001);
 
 module.exports = app;
