@@ -23,11 +23,11 @@ block content
         span &nbsp;Settings&nbsp;
         span.caret
       ul.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='settings-dropdown')
-        li(role='presentation')
+        li#enableTableBordersButton(role='presentation')
           a(role='menuitem', tabindex='-1', href='#')
-            span Enable table borders
+            span Table borders
   #table-wrapper
-    table.table.table-striped
+    table#accountsTable.table.table-striped
       tr
         th
         th Memo No.
