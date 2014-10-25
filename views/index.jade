@@ -17,7 +17,15 @@ block content
             span.caret
           ul.dropdown-menu(role='menu')
             li
-              a(href='javascript:void(0)') Logout
+              a(href='javascript:void(0)')
+                span.glyphicon.glyphicon-cog
+                span &nbsp;
+                span Account settings
+            li
+              a(href='javascript:void(0)')
+                span.glyphicon.glyphicon-log-out
+                span &nbsp;
+                span Logout
   #toolbar
     button.btn.btn-primary.btn-sm(title='Add an entry')
       span.glyphicon.glyphicon-plus
