@@ -8,11 +8,11 @@ $(document).ready(function() {
 
 function enableTableBorders() {
 	var tableBorderSettingsButtonHTML = $("#enableTableBordersButton").html();
-	var tableBorderEnabledHTML = "<a role='menuitem' tabindex='-1' href='javascript:void(0)'><span class='glyphicon glyphicon-ok'></span>&nbsp;Table borders</a>";
+	var tableBorderEnabledHTML = "<a href='javascript:void(0)'><span class='glyphicon glyphicon-ok'></span><span>&nbsp;</span><span>Table borders</span></a>";
 	if (tableBorderEnabled == true) {
 		tableBorderEnabled = false;
 		$("#accountsTable").removeClass("table-bordered");
-		$("#enableTableBordersButton").html("<a role='menuitem' tabindex='-1' href='#'>Table borders</a>");
+		$("#enableTableBordersButton").html("<a href='javascript:void(0)'><span>Table borders</span></a>");
 	}
 	else {
 		tableBorderEnabled = true;

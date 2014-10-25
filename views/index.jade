@@ -25,6 +25,10 @@ block content
               span &nbsp;
               span.caret
             ul.dropdown-menu(role='menu')
+              li#enableTableBordersButton
+                a(href='javascript:void(0)')
+                  span Table borders
+              li.divider
               li
                 a(href='javascript:void(0)')
                   span.glyphicon.glyphicon-cog
@@ -46,17 +50,8 @@ block content
       span.glyphicon.glyphicon-trash
       span &nbsp;Delete
     .dropdown.float-right
-      button#settings-dropdown.btn.btn-default.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown')
-        span.glyphicon.glyphicon-cog
-        span &nbsp;Settings&nbsp;
-        span.caret
-      ul.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='settings-dropdown')
-        li#enableTableBordersButton(role='presentation')
-          a(role='menuitem', tabindex='-1', href='javascript:void(0)')
-            span Table borders
-    .dropdown.float-right.default-right-margin
       button.btn.btn-default.btn-sm.dropdown-toggle(type='button', data-toggle='dropdown')
-        span Sort by month&nbsp;
+        span Sort by&nbsp;
         span.caret
       ul.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='settings-dropdown')
         li(role='presentation')
@@ -68,6 +63,10 @@ block content
         li(role='presentation')
           a(role='menuitem', tabindex='-1', href='javascript:void(0)')
             span June '13
+        li.divider(role='presentation')
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', href='javascript:void(0)')
+            span June '14
   #table-wrapper
     table#accountsTable.table.table-striped.table-hover
       tr

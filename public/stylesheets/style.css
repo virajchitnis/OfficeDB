@@ -20,14 +20,13 @@ body {
 	font-size: 8pt;
 }
 #toolbar {
-	margin: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 #table-wrapper {
-	position: absolute;
-	left: 10px;
-	top: 112px;
-	height: calc(100% - 145px);
-	width: calc(100% - 20px);
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 	overflow: auto;
 }
 .inner-shadow {
