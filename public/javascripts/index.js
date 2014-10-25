@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 function enableTableBorders() {
 	var tableBorderSettingsButtonHTML = $("#enableTableBordersButton").html();
-	var tableBorderEnabledHTML = "<a role='menuitem' tabindex='-1' href='#'><span class='glyphicon glyphicon-ok'></span>&nbsp;Table borders</a>";
+	var tableBorderEnabledHTML = "<a role='menuitem' tabindex='-1' href='javascript:void(0)'><span class='glyphicon glyphicon-ok'></span>&nbsp;Table borders</a>";
 	if (tableBorderEnabled == true) {
 		tableBorderEnabled = false;
 		$("#accountsTable").removeClass("table-bordered");
