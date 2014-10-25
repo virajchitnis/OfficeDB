@@ -7,6 +7,17 @@ block content
         a.navbar-brand(href='javascript:void(0)') #{appname}
       button.btn.btn-default.navbar-btn(type='button') Accounts
       button.btn.btn-default.navbar-btn.default-left-margin(type='button') Contacts
+      ul.nav.navbar-nav.navbar-right
+        li.dropdown
+          a.dropdown-toggle(href='javascript:void(0)', data-toggle='dropdown')
+            span.glyphicon.glyphicon-user
+            span &nbsp;
+            span Viraj Chitnis
+            span &nbsp;
+            span.caret
+          ul.dropdown-menu(role='menu')
+            li
+              a(href='javascript:void(0)') Logout
   #toolbar
     button.btn.btn-primary.btn-sm(title='Add an entry')
       span.glyphicon.glyphicon-plus
